@@ -1,12 +1,16 @@
 /*jshint node:true*/
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var Yelp = require('yelp');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
   });
 
+
+  //app.import('bower_components/moment/moment.js')
+  app.import('vendor/gmaps.js');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //

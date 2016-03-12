@@ -1,0 +1,108 @@
+<div class="container">
+  <nav class="nav">
+    <a class="nav__brand" href="#">&</a>
+    <div class="nav__links">
+      <a href="#">Inspiration</a>
+      <a href="#">Log in</a>
+    </div>
+  </nav>
+<header class="header">
+  <!-- {{log selectedItems.foursquareDrinks}} -->
+  <!-- {{log selectedItems.location}} -->
+  <!-- {{selectedItems.foursquareDrinks.0.location.city}} -->
+  <!-- <h1>{{selectedItems.foursquareDrinks.0.location.city}}, {{selectedItems.foursquareDrinks.0.location.state}}, {{selectedItems.foursquareDrinks.0.location.country}}</h1> -->
+  <h1>{{selectedItems.location}}</h1>
+  <h3>Plan the perfect night</h3>
+</header>
+    <div class="content">
+
+<!-- ASIDE , this goes on every page except the first landing page -->
+    <aside class="aside">
+        <div class="aside__header">
+          <h1>Date Night</h1>
+          <p>
+            So you want to go out on a hot date? Here is what we suggest...
+          </p>
+          <ul>
+            <li>Drinks</li>
+            <li>Dinner</li>
+            <li>Dancing</li>
+          </ul>
+          <p>
+            Drag and drop things you want to save for your night.
+          </p>
+          <!-- <img class="aside__header__icon" src="img/icon.png"> -->
+
+        </div>
+      <div class="aside__content">
+        <h1 class="category"><i class="fa fa-glass"></i></h1>
+
+          <div class="aside__drop">
+            {{aside-card business=selectedItems.drink}}
+          </div>
+          <h1 class="category"><i class="fa fa-cutlery"></i></h1>
+          <div class="aside__drop">
+            {{aside-card business=selectedItems.dinner}}
+          </div>
+          <h1 class="category"><i class="fa fa-users"></i></h1>
+          <div class="aside__drop">
+            {{aside-card business=selectedItems.art}}
+          </div>
+        <button type="button" name="button" {{action 'resetFavorites'}}>Reset</button>
+        {{final-button toFinal="toFinal"}}
+      </div>
+    </aside>
+<!-- END of ASIDE -->
+
+
+<!-- MAP section, each question will bring up a map section with different cards, with ASIDE -->
+<section class="map">
+
+  <div class="map__google">
+    {{google-map}}
+  </div>
+
+
+  <h1 class="category">Drinks</h1>
+  <div class="map__footer" id="1">
+    {{#each foursquareApi.foursquareDrinks as |business|}}
+
+      {{card-tile business=business}}
+    {{/each}}
+
+  </div>
+
+  <h1 class="category">Dinner</h1>
+  <div class="map__footer" id="2">
+    {{#each foursquareApi.foursquareDinners as |business|}}
+      {{card-tile business=business}}
+    {{/each}}
+
+  </div>
+
+  <h1 class="category">Art</h1>
+  <div class="map__footer" id="3">
+    {{#each foursquareApi.foursquareArts as |business|}}
+      {{card-tile business=business}}
+    {{/each}}
+
+  </div>
+
+  <button id='spin' type="button" name="button">I'm feeling lucky</button>
+</section>
+
+
+</div>
+
+<footer>
+  <ul>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+  </ul>
+</footer>
+
+<!-- END of CONTENT -->
+</div>

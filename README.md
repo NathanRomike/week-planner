@@ -1,53 +1,33 @@
-# Weekend-planner
+# _{Week&}_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _{Date night planner for anywhere around the world. March 11, 2016}_
 
-## Prerequisites
+#### By _**{Kassidy Douglas, Lorenzo Ferrario, Illia Kuchko, Nathan Romike, Mao Thygesen }**_
 
-You will need the following things properly installed on your computer.
+## Description
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+_{Week& is a date night planner that plans your night starting with drinks, dinner then the arts. Once you put in a location, a list and map are generated with the top choices for each category. Your choices are saved and put into your final mapped out plan for the night.  }_
 
-## Installation
+## Setup/Installation Requirements
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+* _Download from GitHub_
+* _Open in browser_
 
-## Running / Development
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+## Known Bugs
 
-### Code Generators
+_{The navbar and footer links do not go anywhere. }_
 
-Make use of the many generators for code, try `ember help generate` for more details
+## Support and contact details
 
-### Running Tests
+_{Contact us through GitHub}_
 
-* `ember test`
-* `ember test --server`
+## Technologies Used
 
-### Building
+_{CSS, JavaScript, Ember, Gulp, Lost}_
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+### License
 
-### Deploying
+*{MIT}*
 
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Copyright (c) 2016 **_{Kassidy Douglas, Lorenzo Ferrario, Illia Kuchko, Nathan Romike, Mao Thygesen}_**

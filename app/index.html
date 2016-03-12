@@ -5,21 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>WeekendPlanner</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato|Ultra' rel='stylesheet' type='text/css'>
 
     {{content-for "head"}}
 
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/weekend-planner.css">
 
+
     {{content-for "head-footer"}}
   </head>
   <body>
+
     {{content-for "body"}}
 
     <script src="assets/vendor.js"></script>
     <script src="assets/weekend-planner.js"></script>
+    <script src="/bower_components/oauth-signature/dist/oauth-signature.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script> -->
 
     {{content-for "body-footer"}}
   </body>
+
 </html>

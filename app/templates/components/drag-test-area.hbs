@@ -1,0 +1,15 @@
+<div class="">
+  {{#draggable-dropzone dropped='dropped'}}
+    {{#each selectedItems.items as |item|}}
+      <div>{{item.name}}</div> <button {{action "remove" item}}>Remove</button>
+    {{/each}}
+  {{/draggable-dropzone}}
+</div>
+
+<div class="">
+  {{#each model as |item|}}
+    {{#draggable-item content=item.id}}
+    <div>{{item.name}}</div>
+    {{/draggable-item}}
+  {{/each}}
+</div>

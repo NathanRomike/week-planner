@@ -1,0 +1,9 @@
+{{input value=location id=location }}
+<button {{action 'sendRequestToService'}}>request in service</button>
+<button {{action 'sendFoursquareRequest'}}>Foursquare request</button>
+{{#if isShowes}}
+  <h1>yelpResult.total</h1>
+{{/if}}
+<p>
+  <!-- {{log model}} -->
+</p>

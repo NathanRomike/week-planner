@@ -1,0 +1,43 @@
+<div class="content">
+
+  <section class="final">
+    <header class="final__header">
+      <h1>Date Night</h1>
+      <h3>Here is how your night is looking.</h3>
+    </header>
+    {{final-map showFinalMap="showFinalMap"}}
+
+  </section>
+
+  <aside class="aside">
+    <div class="aside__final">
+      <h1>Date Night</h1>
+      <p>
+        Here's your itinerary...
+      </p>
+      <img class="aside__header__icon" src="img/icon.png">
+    </div>
+
+    <div class="aside__content">
+      <h1 class="category"><i class="fa fa-glass"></i>Your choices</h1>
+      {{#if googleMap.drink.name}}
+        <div class="aside__drop">
+          {{final-aside-card business=googleMap.drink}}
+        </div>
+      {{/if}}
+      <h1 class="category"><i class="fa fa-cutlery"></i></h1>
+      {{#if googleMap.dinner.name}}
+        <div class="aside__drop">
+          {{final-aside-card business=googleMap.dinner}}
+        </div>
+      {{/if}}
+      <h1 class="category"><i class="fa fa-users"></i></h1>
+      {{#if googleMap.art.name}}
+        <div class="aside__drop">
+          {{final-aside-card business=googleMap.art}}
+        </div>
+      {{/if}}
+    </div>
+  </aside>
+
+</div>
