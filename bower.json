@@ -6,6 +6,7 @@
     "ember-cli-test-loader": "0.2.2",
     "ember-qunit-notifications": "0.1.0",
     "gmaps-for-apps": "^0.5.9",
-    "slick-carousel": "^1.5.9"
+    "slick-carousel": "^1.5.9",
+    "firebase": "^2.1.0"
   }
 }

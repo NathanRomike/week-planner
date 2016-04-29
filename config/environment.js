@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'weekend-planner',
     environment: environment,
+    firebase: 'https://weekends.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
