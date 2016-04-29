@@ -10,8 +10,7 @@ _{Week& is a date night planner that plans your night starting with drinks, dinn
 
 ## Setup/Installation Requirements
 
-* _Download from GitHub_
-* _Open in browser_
+* [_Open in browser_](https://weekends.firebaseapp.com/)
 
 
 ## Known Bugs
